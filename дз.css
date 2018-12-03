@@ -1,0 +1,184 @@
+*{
+	box-sizing: border-box;
+	font-family: Fira Sans, Arial, sans-serif;
+}
+
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+* html .row { height: 1%; }
+.row { display: block; }
+
+.row{
+	background: #3d3c66; 
+}
+
+.header{
+	margin-bottom: 10px;
+}
+
+.inner-header{
+	background: #3d3c66;
+	height: 50px;
+}
+/*menu*/
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+	margin: 10px;
+	font-size: 20px;
+}
+
+.menu ul {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	float: left;
+	list-style: none;
+	width: 140px;
+	text-align: center;
+}
+
+.menu li a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	background: #3662ba;
+	padding: 10px;
+}
+
+.menu li a:hover {
+	background: #c0c0c0;
+}
+
+.menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+.menu ul ul li {
+	float: none;
+	position: relative;
+}
+
+.menu ul ul ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+.menu ul li:hover > ul {
+	display: block;
+}
+/*end of menu*/
+
+
+.content{
+	width: 65%;
+	float: left;
+}
+
+.stih{
+	text-align: center;
+}
+
+.inner-content{
+	background: #3d3c66;
+	min-height: 500px;
+	color: #fff;
+}
+
+.foto{
+	float: left;
+	width: 15%;
+	margin:1%;
+}
+
+img{
+	width:46%;
+}
+.big{
+	float:right;
+	width: 53%;
+}
+
+.sidebar-1{
+	float: left;
+	width: 20%;
+	padding-right: 10px;
+}
+
+.inner-sidebar-1{
+	background: #3d3c66;
+	min-height: 500px;
+}
+
+.venom{
+	width: 90%;
+	margin: 5%;
+}
+
+.sidebar-2{
+	float: left;
+	width: 15%;
+	padding-left: 10px;
+}
+
+.inner-sidebar-2{
+	background: #3d3c66;
+	min-height: 500px;
+	text-align: center;
+}
+
+.ssilki{
+	width:60%;
+	margin-top: 10%;
+	vertical-align: middle;
+}
+
+.footer{
+	margin-top: 10px;
+}
+
+.inner-footer{
+	background: #3d3c66;
+	height: 28px;
+	color: #fff;
+	text-align: right;
+}
+
+h3{
+	margin-right: 2%;
+}
+
+em{
+	padding-left: 20%;
+}
+
+@media print{
+	.sidebar-1, .header, .sidebar-2, .foto, .footer, img {
+		display: none;
+	}
+	.inner-content, .content{
+		width:100%;
+	}
+	
+	*{
+		color: #000
+}
+}
+
